@@ -1,0 +1,11 @@
+{
+  "name": "AI Usage",
+  "author": "jason9075",
+  "flags": [],
+  "api_version": 1,
+  "publish": {
+    "tags": ["ai", "usage", "quota", "claude", "codex"],
+    "description": "Show Claude Code and OpenAI Codex usage quotas in the Quick Access menu.",
+    "image": ""
+  }
+}

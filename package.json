@@ -1,0 +1,25 @@
+{
+  "name": "decky-ai-usage",
+  "version": "0.1.0",
+  "description": "Show AI coding assistant usage quotas in the Decky Quick Access menu",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "package": "npm run build && rm -rf out && mkdir -p out/ai-usage && cp -r dist main.py package.json plugin.json README.md out/ai-usage/ && rm -f out/ai-usage/dist/*.map && cd out && zip -qr ai-usage.zip ai-usage"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@decky/rollup": "1.0.1",
+    "@decky/ui": "4.7.2",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "rollup": "4.22.5",
+    "typescript": "5.6.2"
+  },
+  "dependencies": {
+    "@decky/api": "1.1.2",
+    "react-icons": "5.3.0",
+    "tslib": "2.7.0"
+  }
+}
